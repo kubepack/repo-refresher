@@ -31,11 +31,11 @@ refresh() {
     cd $(ls -b1)
     git checkout -b $PR_BRANCH
     if [ -f go.mod ]; then
-        if [ "$1" != "github.com/kubepack/apimachinery" ]; then
-            go mod edit \
-                -require kubepack.dev/apimachinery@${KUBEDB_API_REF}
-            go mod tidy
-        fi
+        # if [ "$1" != "github.com/kubepack/apimachinery" ]; then
+        #     go mod edit \
+        #         -require kubepack.dev/apimachinery@${KUBEDB_API_REF}
+        #     go mod tidy
+        # fi
         go mod edit \
             -require=kmodules.xyz/client-go@dd0503cf99cf3b6abb635d8945a8d7d8fed901d9 \
             -require=kmodules.xyz/webhook-runtime@e489faf01981d2f3afa671989388c7b6f22b6baa \
