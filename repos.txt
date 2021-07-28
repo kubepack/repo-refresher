@@ -1,0 +1,6 @@
+github.com/kubepack/chart-doc-gen
+github.com/kubepack/installer
+github.com/kubepack/kubepack
+github.com/kubepack/lib-app
+github.com/kubepack/lib-helm
+github.com/kubepack/module
